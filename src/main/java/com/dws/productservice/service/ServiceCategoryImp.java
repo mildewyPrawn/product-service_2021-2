@@ -35,7 +35,7 @@ public class ServiceCategoryImp implements ServiceCategory {
 
     @Override
     public void updateCategory(DtoCategory category, int id) throws Exception {
-		
+        repositoryCategory.updateCategory(category, id);
     }
 
     @Override

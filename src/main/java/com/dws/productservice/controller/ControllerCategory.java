@@ -55,9 +55,9 @@ public class ControllerCategory {
     public ResponseEntity<Object> updateCategory(@RequestBody DtoCategory categoria, @PathVariable("id") int id) throws Exception {
         try {
             serviceCategory.updateCategory(categoria, id);
-            return new ResponseEntity<>(HttpStatus.OK);
-        } catch (Exception e) {
-            throw new ApiException(HttpStatus.BAD_REQUEST, e.getLocalizedMessage());
+            return new ResponseEntity<>(HttpStatus.CREATED);
+        } catch (ApiException e) {
+            throw e;
         }
     }
 	
