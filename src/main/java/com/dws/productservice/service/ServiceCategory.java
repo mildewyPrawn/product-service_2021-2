@@ -1,8 +1,8 @@
-package com.productservice.service;
+package com.dws.productservice.service;
 
 import java.util.List;
 
-import com.productservice.dto.DtoCategory;
+import com.dws.productservice.dto.DtoCategory;
 
 public interface ServiceCategory {
 

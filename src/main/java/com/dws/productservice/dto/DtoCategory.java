@@ -1,4 +1,4 @@
-package com.productservice.dto;
+package com.dws.productservice.dto;
 
 public class DtoCategory {
 

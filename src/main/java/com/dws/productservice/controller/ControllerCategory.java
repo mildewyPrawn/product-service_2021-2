@@ -1,4 +1,4 @@
-package com.productservice.controller;
+package com.dws.productservice.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.productservice.dto.DtoCategory;
-import com.productservice.exceptionHandling.ApiException;
-import com.productservice.service.ServiceCategory;
+import com.dws.productservice.dto.DtoCategory;
+import com.dws.productservice.exceptionHandling.ApiException;
+import com.dws.productservice.service.ServiceCategory;
 
 @RestController
 @RequestMapping("/category")
