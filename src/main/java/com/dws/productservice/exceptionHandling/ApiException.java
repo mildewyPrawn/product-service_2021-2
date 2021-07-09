@@ -18,5 +18,9 @@ public class ApiException extends RuntimeException {
     public void setStatus(HttpStatus status) {
         this.status = status;
     }
+
+    public String toString() {
+        return "http status: " + this.status + "\t" + super.toString();
+    }
     
 }
