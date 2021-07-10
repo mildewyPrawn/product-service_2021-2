@@ -52,8 +52,15 @@ public class ControllerProduct {
     }
 
     @PutMapping("/{codigo}")
-    public ResponseEntity<Object> updateStockProduct() throws Exception {
-        return null;
+    public ResponseEntity<Object> updateStockProduct(@RequestBody DtoProduct product) throws Exception {
+        try {
+            String codigo = product.getCodigo();
+            int cantidad = product.getCantidad();
+            serviceProduct.updateStockProduct(codigo, cantidad);
+            return new ResponseEntity<>(HttpStatus.CREATED);
+        }catch(Exception e) {
+            throw new ApiException(HttpStatus.BAD_REQUEST, e.getLocalizedMessage());
+        }
     }
 
     @DeleteMapping("/{codigo}")

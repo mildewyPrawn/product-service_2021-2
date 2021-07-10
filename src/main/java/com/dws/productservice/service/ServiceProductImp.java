@@ -35,7 +35,7 @@ public class ServiceProductImp implements ServiceProduct {
 
     @Override
     public void updateStockProduct(String codigo, int cantidad) throws Exception {
-
+        repositoryProduct.updateStockProduct(codigo, cantidad);
     }
 
     @Override
